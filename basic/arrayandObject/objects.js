@@ -29,7 +29,28 @@ console.log(myobject.greating());
 const allkeys=Object.keys(myobject)
 Object.values(myobject)
 Object.entries(myobject)
-console.log(Object.values(myobject));
+// console.log(Object.values(myobject));
+
+// object de structure
+ 
+const course= {
+    name: "Java Script",
+    instructure:"Hitash Chaudhary",
+    learnForm:"YouTube",
+    fee: 999
+}
+
+//normal way to get data
+console.log(course.instructure);
+
+//object de structure calling
+// is main leanForm object ke key a agai  or appName uska variable type ban gya.
+const {learnForm}=course
+const {learnForm: appNmae}=course
+console.log("de structure",appNmae);
+
+
+
 
 
 
