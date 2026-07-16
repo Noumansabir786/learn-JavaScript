@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="background-color: #212121; color: #fff;">
+        <div class="parant">
+            <div class="days">Monday</div>
+            <div class="days">Tuesday</div>
+            <div class="days">Wednesday</div>
+            <div class="days">Thursaday</div>
+            <div class="days">Friday</div>
+            <div class="days">Saturday</div>
+            <div class="days">Sunday</div>
+        </div>
+    </body>
+    <script>
+        const days = document.querySelector('.parant');
+        console.log(days);
+        console.log(days.children);
+        console.log(days.children[0]);
+        console.log(days.children[0].innerHTML);
+
+        for (let i = 0; i < days.children.length; i++) {
+            console.log("week days name:",i+ " "+ days.children[i].innerHTML);
+        }
+        
+
+        days.children[0].style.color = "Red";
+
+        //get first child of the parent
+        console.log(days.firstElementChild);
+
+        //get last child of the parent
+        console.log(days.lastElementChild);
+
+        //get next sibling of the first child
+        console.log("sibling child",days.firstElementChild.nextElementSibling);
+
+        //get parent from child
+        console.log("parent from child",days.firstElementChild.parentElement);
+        console.log("parent fsrom child",document.querySelector('.days').parentElement);
+
+        console.log("node list", days.childNodes);
+        
+        
+
+        
+        
+    </script>
+</html>

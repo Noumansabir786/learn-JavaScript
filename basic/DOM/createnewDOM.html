@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Java Script from chai and code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const newDiv = document.createElement('div');
+    console.log(newDiv);
+    newDiv.className = "weekdays";
+    newDiv.id = Math.round(Math.random() * 10 + 1)
+    newDiv.setAttribute('title', 'This is the Div Title')
+    newDiv.style.backgroundColor = "red";
+    newDiv.style.padding = "20px";
+    newDiv.style.height = "100px";
+    newDiv.style.width = "100%";
+    newDiv.style.alignContent = "center";
+
+    //set text  in the div
+    const text=document.createTextNode('This is the text in the div');
+    newDiv.appendChild(text);
+
+    document.body.appendChild(newDiv);
+   
+</script>
+</html>

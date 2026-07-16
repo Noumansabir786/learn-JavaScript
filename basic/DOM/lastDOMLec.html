@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul>
+        <li>Learning JavaScript</li>
+    </ul>
+
+    <input type="text" id="language" placeholder="Enter language name">
+    <button id="addLanguage">Add Language</button>
+    
+</body>
+<script>
+    const btn=document.getElementById('addLanguage')
+    btn.addEventListener('click',()=>{
+        const langname=document.getElementById('language');
+        addLanguage(langname.value);
+    })
+    
+    
+    function addLanguage(lannguageName){
+        const listElemenet= document.createElement('li');
+       
+        // const listNode=document.createTextNode(lannguageName);
+        // listElemenet.appendChild(listNode);
+        listElemenet.innerHTML=`${lannguageName}`
+        document.querySelector('ul').appendChild(listElemenet);
+    }
+
+    function addoptimizelanguage(languagename){
+        const listE=document.createElement('li')
+        listE.appendChild(document.createTextNoe(languagename))
+        document.querySelector('ul').appendChild(listE)
+    }
+    //replace text 
+
+    //delete text
+</script>
+</html>
